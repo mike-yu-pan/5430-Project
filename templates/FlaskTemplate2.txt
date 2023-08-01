@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang = "en">
+<body>
+	<header>
+	</header>
+	<title>IMDB Recommendation</title>
+	<nav>
+		<a href = "#">Search</a>
+		<a href = "about.html">About</a>
+	</nav>
+	<a href = {{url_for('submit')}}>View Sheet</a>
+
+	{{table|safe}}
+</body>
+</html>
