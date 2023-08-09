@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>StreamQuest</title>
+</head>
+<body style= "background-color: #75a5b0;">
+	<header style = "width: 100%; text-align: center; margin:0 auto;" >
+		<img src={{ url_for('static', filename='logo.png') }} alt="logo">
+	</header>
+	<main style = "text-align: center; margin:0 auto;">
+		<h2> <a href="/topic visualisation"><button class=grey;">Topic Visualisation</button></a> </h2> 
+		<h1 style = "color: white; font: bold;">Start your search</h1>
+		<p> Our recommendation system has three types of search queries. The first is the basic recommender where you enter one movie name in search bar 1. The second is the advanced recommender where you enter one movie name in search bar 1 and one movie name in search bar 2. The last one is the plot checker where you enter a plot description in search bar 3.</p>
+		<form action="/submit" method="POST">
+			<label for="site-search1">
+				<input type="text" id="site-search1" name="q1">
+			</label>
+			<button type="submit">Search bar 1</button>
+			<label for="site-search2">
+				<input type="text" id="site-search2" name="q2">
+			</label>
+			<button type="submit">Search bar 2</button>
+			<label for="site-search3">
+				<input type="text" id="site-search3" name="q3">
+			</label>
+			<button type="submit">Search bar 3</button>
+		</form>
+	</main>
+</body>
+</html>
