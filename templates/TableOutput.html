@@ -2,21 +2,19 @@
 <html lang="en">
 <head>
 	<title>StreamQuest</title>
-</head>
+<style>
+.tablestyle {width: 100%; height: auto}
+</style>
 <body>
-	<header style = "width: 100%; height: 100px;">
-		<img src={{ url_for('static', filename='logo.png') }} alt="logo">
-	</header>
 	<main>
 		<title style = "color: white;">Recommendations</title>
+		<p>30 Movies Retrieved, Time taken: {{ time_taken }} seconds.</p>
 		<nav>
 			<a href = "#">Search</a>
 		</nav>
 		<a href = {{url_for('submit')}}>View Sheet</a>
-		<div>
-		<table style = "width: 100%; height: auto">
+		<div class = "tablestyle">
 		{{table|safe}}
-		</table>
 		</div>
 	</main>
 </body>
