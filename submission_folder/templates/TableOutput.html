@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>StreamQuest</title>
+<style>
+.tablestyle {width: 100%; height: auto}
+</style>
+<body>
+	<main>
+		<title style = "color: white;">Recommendations</title>
+		<p>30 Movies Retrieved, Time taken: {{ time_taken }} seconds.</p>
+		<nav>
+			<a href = "#">Search</a>
+		</nav>
+		<a href = {{url_for('submit')}}>View Sheet</a>
+		<div class = "tablestyle">
+		{{table|safe}}
+		</div>
+	</main>
+</body>
+</html>
